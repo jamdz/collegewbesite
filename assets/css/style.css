@@ -378,3 +378,47 @@ display: flex;
     color: white;
     margin-bottom: 17px;
   }
+
+  @media screen and (max-width: 750px) {
+
+    .logo-img{
+
+      width: 100px;
+      height: auto;
+    }
+
+    .page-cont-1 h3{
+
+      font-size: 23px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      color: white;
+
+    }
+
+    .page-cont-2 h3{
+
+      font-size: 23px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      color: white;
+
+    }
+
+    .page-content-01 p{
+
+      font-size: 29px;
+      color: white;
+    }
+
+    .menu{
+
+      display: none;
+    }
+
+    .slider-title{
+
+      font-size: 28px;
+    }
+
+  }
