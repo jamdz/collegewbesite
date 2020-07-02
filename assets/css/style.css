@@ -460,4 +460,34 @@ display: flex;
       margin: 10px;
     }
 
+
+    .side-nav{
+
+      max-width: 450px;
+      padding: 15px;
+      flex: 2;
+    }
+
+    .hamburger{
+
+      position: relative;
+      top: -28px;
+      padding: 41px 0;
+      left: 7px;
+    }
+
+
+    .hamburger.open {
+     margin: 0px;
+     position: relative;
+     top: 26px;
+    }
+
+    .side-nav-menu-list.show{
+
+      margin: 15px 0;
+      padding: 2px;
+      width: 70px;
+    }
+
   }
