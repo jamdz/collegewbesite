@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 
+body{
+
+    background-color: blue;
+}
 /*General selector*/
 
 *{
@@ -39,11 +43,12 @@ display: flex;
 
     flex: 2;
     padding: 41px 0;
-    background-color: tomato;
+    background-color: transparent;
     overflow:-moz-hidden-unscrollable;
-    max-width: 127px;
+    max-width: 104px;
     overflow: hidden;
-    height: fit-content;
+    height: 550px;
+
 }
 
 
@@ -56,7 +61,7 @@ display: flex;
     height: 610px;
     overflow: hidden;
     border-bottom-right-radius: 15%;
-    background-color: lightgray;
+    background-color: rgb(33, 30, 252);
 
 }
 .slider{
@@ -84,13 +89,13 @@ display: flex;
 
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
-    color: brown;
+    color: white;
 }
 
 
 .menu-list a:hover{
 
-    color: darkblue;
+    color: rgb(11, 238, 105);
 }
 
 .side-nav-menu-list{
@@ -103,13 +108,16 @@ display: flex;
 
 .side-nav-menu-list li{
 
-    margin: 0 0 29px 0;;
+    margin: 0 0 15px 0;;
 }
 
 
 .side-nav-menu-list a {
 
     font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
 }
 
 /*Logo image css styles*/
@@ -146,10 +154,10 @@ display: flex;
 
 .hamburger-bar{
 
-    background-color: black;
+    background-color: white;
     padding: 1px 0;
     margin-top: 8px;
-    width: 58px;
+    width: 45px;
     height: 1px;
     transform: rotateY(360deg);
     position: relative;
@@ -245,7 +253,7 @@ display: flex;
     animation: textent ease-in-out 7s infinite;
     top: 98px;
     left:19px;
-    opacity: 0.04;
+    opacity: 0.08;
     z-index: -1;
   }
 
@@ -258,6 +266,7 @@ display: flex;
     position: absolute;
     top: 279px;
     left:19px;
+    color: white;
   }
 
 
@@ -276,4 +285,86 @@ display: flex;
   .social-links li{
 
     margin-top: 15px;
+    color: white;
+    font-size: 17px;
+  }
+
+
+  .page-content{
+
+    margin:39px;
+  }
+
+
+  /**/
+
+  .page-content-01{
+
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 43px;
+    font-weight: bold;
+    text-align: center;
+
+  }
+
+  .page-cont{
+
+    padding: 45px;
+    display: flex;
+  }
+
+  .page-cont-1 p{
+
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    
+  }
+
+  .page-cont-1{
+
+    flex: 2;
+    margin: 25px;
+  }
+
+  .page-cont-1 h3{
+
+    margin-top: 17px;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 17px;
+  }
+
+  .page-cont-2{
+
+    flex: 2;
+    margin: 25px;
+  }
+
+
+  .page-cont-2 p{
+
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 17px;
+    margin-bottom: 17px;
+  }
+
+
+  .page-cont-2 h3{
+
+    margin-top: 17px;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 17px;
   }
