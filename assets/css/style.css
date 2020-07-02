@@ -379,6 +379,8 @@ display: flex;
     margin-bottom: 17px;
   }
 
+  /**/
+
   @media screen and (max-width: 750px) {
 
     .logo-img{
@@ -418,14 +420,38 @@ display: flex;
 
     .slider-title{
 
-      font-size: 28px;
+      font-size: 25px;
     }
 
 
     .page-cont-1 p{
 
       font-size: 12px;
-      
+
+    }
+
+    .page-cont-2 p{
+
+      font-size: 12px;
+
+    }
+
+
+    .page-cont{
+
+      padding: 19px;
+    }
+
+
+    .page-cont-1{
+
+      margin: 10px;
+    }
+
+
+    .page-cont-2{
+
+      margin: 10px;
     }
 
   }
