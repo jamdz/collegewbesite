@@ -1,7 +1,7 @@
 let hamburger = document.querySelector(".hamburger");
-let mobileMenu = document.querySelector(".mobile-menu-list");
+let sidenavmenu = document.querySelector(".side-nav-menu-list");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("open");
-  mobileMenu.classList.toggle("show");
+  sidenavmenu.classList.toggle("show");
 });

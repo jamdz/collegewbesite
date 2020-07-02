@@ -103,12 +103,18 @@ display: flex;
     display: flex; 
     margin: 127px 0 0 0;; 
     padding: 8px; 
-    flex-direction: column; 
+    flex-direction: column;
+    display: none;
+}
+
+.side-nav-menu-list.show{
+
+  display: block;
 }
 
 .side-nav-menu-list li{
 
-    margin: 0 0 15px 0;;
+    margin: 0 0 15px 0;
 }
 
 
