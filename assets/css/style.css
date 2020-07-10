@@ -385,109 +385,117 @@ display: flex;
     margin-bottom: 17px;
   }
 
-  /**/
 
-  @media screen and (max-width: 750px) {
+  /* Media query csss styles*/ 
 
-    .logo-img{
+@media screen and (max-width: 750px) {
 
-      width: 180px;
-      height: auto;
-    }
+  .logo-img{
 
-    .page-cont-1 h3{
+    width: 180px;
+    height: auto;
+  }
 
-      font-size: 23px;
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: bold;
-      color: white;
+  .page-cont-1 h3{
 
-    }
-
-    .page-cont-2 h3{
-
-      font-size: 23px;
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: bold;
-      color: white;
-
-    }
-
-    .page-content-01 p{
-
-      font-size: 29px;
-      color: white;
-    }
-
-    .menu{
-
-      display: none;
-    }
-
-    .slider-title{
-
-      font-size: 25px;
-    }
-
-
-    .page-cont-1 p{
-
-      font-size: 12px;
-
-    }
-
-    .page-cont-2 p{
-
-      font-size: 12px;
-
-    }
-
-
-    .page-cont{
-
-      padding: 19px;
-    }
-
-
-    .page-cont-1{
-
-      margin: 10px;
-    }
-
-
-    .page-cont-2{
-
-      margin: 10px;
-    }
-
-
-    .side-nav{
-
-      max-width: 450px;
-      padding: 15px;
-      flex: 2;
-    }
-
-    .hamburger{
-
-      position: relative;
-      top: -28px;
-      padding: 41px 0;
-      left: 7px;
-    }
-
-
-    .hamburger.open {
-     margin: 0px;
-     position: relative;
-     top: 26px;
-    }
-
-    .side-nav-menu-list.show{
-
-      margin: 15px 0;
-      padding: 2px;
-      width: 70px;
-    }
+    font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
 
   }
+
+  .page-cont-2 h3{
+
+    font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+
+  }
+
+  .page-content-01 p{
+
+    font-size: 29px;
+    color: white;
+  }
+
+  .menu{
+
+    display: none;
+  }
+
+  .slider-title{
+
+    font-size: 25px;
+  }
+
+
+  .page-cont-1 p{
+
+    font-size: 12px;
+
+  }
+
+  .page-cont-2 p{
+
+    font-size: 12px;
+
+  }
+
+
+  .page-cont{
+
+    padding: 19px;
+  }
+
+
+  .page-cont-1{
+
+    margin: 10px;
+  }
+
+
+  .page-cont-2{
+
+    margin: 10px;
+  }
+
+
+  .side-nav{
+
+    max-width: 450px;
+    padding: 15px;
+    flex: 2;
+  }
+
+  .hamburger{
+
+    position: relative;
+    top: -28px;
+    padding: 41px 0;
+    left: 7px;
+  }
+
+
+  .hamburger.open {
+   margin: 0px;
+   position: relative;
+   top: 26px;
+  }
+
+  .side-nav-menu-list.show{
+
+    margin: 15px 0;
+    padding: 2px;
+    width: 70px;
+    width: 179px;
+  }
+
+  .hamburger-bar{
+
+    width: 41px;
+    height: 0.3px;
+  }
+
+}

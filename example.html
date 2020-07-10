@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           
+           .hamburger{
+
+               
+               padding: 6px;
+               cursor: pointer;
+               position: relative;
+               top: 37px;
+               float: right;
+               overflow-y: hidden;
+           }
+
+           .hambrger-bar{
+
+               background-color: black;
+               padding: 1px;
+               height: 0.26px;
+               width: 46px;
+               margin: 7px 0;
+               transform: rotateY(360deg);
+               position: relative;
+               
+           }
+
+           .hamburger.open .hambrger-bar:nth-child(1){
+
+               position: absolute;
+               transform: rotate(134deg);
+               top: 0;
+               transition: 0.2s;
+           }
+
+           .hamburger.open .hambrger-bar:nth-child(2){
+
+               position: absolute;
+               opacity: 0;
+               
+           }
+
+           .hamburger.open .hambrger-bar:nth-child(3){
+
+               position: absolute;
+               transform: rotate(45deg);
+               top: 0;
+               transition: 0.25s;
+
+           }
+
+           .side-nav{
+
+               background-color: brown;
+               line-height: 35px;
+               padding: 3px;
+               width: 177px;
+               height: 970px;
+               overflow-x: hidden;
+               display: none;
+              
+              position: fixed;
+              z-index: -1;
+              top: 0;
+
+           }
+
+
+
+
+           .side-nav.show{
+
+               display: block;
+               transition: 0.5s;
+           }
+
+           .menu-list{
+
+               /*padding: 7px;*/
+               margin: 29px 0;
+           }
+
+
+           *{
+
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            text-decoration: none;
+           }
+
+
+           .menu-list li{
+
+               padding: 15px;
+               
+           }
+
+
+           .menu-list li:hover{
+
+               background-color: rgb(70, 245, 17);
+           }
+
+
+           .menu-list a {
+
+               color: coral;
+               font-weight: bold;
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+               font-size: 17px;
+           }
+
+
+           .img{
+
+               border-radius: 95%;
+               width: 6vw;
+               height: auto;
+               margin: 56px 0;
+               position: relative;
+               top:58px;
+               left: 48px;
+               animation: imgscale scale ease-in-out 7s infinite;
+           }
+
+           .imgae-p p {
+
+               color: cyan;
+               font-weight: bold;
+               font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+               'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+               text-align: center;
+               font-size: 12px;
+           }
+
+           .imgae-p{
+
+               padding: 6px;
+           }
+
+
+           .deg{
+
+               display: none;
+           }
+
+           
+
+        </style>
+        
+    </head>
+    <body>
+
+        <div class="hamburger">
+            <div class="hambrger-bar"></div>
+            <div class="hambrger-bar"></div>
+            <div class="hambrger-bar"></div>
+    
+        </div>
+
+        <div class="side-nav">
+
+            <hr style="position: relative; top:95px;, background-color: #ffff";>
+        <div>
+          <img src="assets/image/giphy.gif" class="img">
+          <div class="imgae-p"><p>Your Name</p></div>
+        </div>
+
+        <hr>
+          <div class="menu">
+              <ul class="menu-list">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Picture</a></li>
+                  <li><a href="#">Download Now</a></li>
+              </ul>
+          </div>
+        </div>
+
+        <section>
+            <div>
+                <span class="Celisus">0</span><span class="deg">&#8451;</span><br/><br>
+
+                <input type="number" placeholder="number" class="con">
+                <input type="button" value="Convert to Celisus" class="convert-celisus">
+
+            </div>
+
+            <div class="demo"></div>
+
+
+            <p class="year"></p> <p class="time"></p>
+        </section>
+
+    
+    </body>
+    <script>
+
+      //let p = 19; //number datatypelet zyz= "17"; //string datatypelet cat = ["cat1", "cat2", "cat3", "..."]; //array datatypelet ourAssets = { car: "lambo", price: "$3500", duration:5};console.log(ourAssets);//
+        
+      let hamburger = document.querySelector (".hamburger");
+
+      let sidenav = document.querySelector (".side-nav");
+
+
+      hamburger.addEventListener ("click", () => {
+
+          hamburger.classList.toggle ("open");
+          sidenav.classList.toggle ("show");
+
+      });
+
+
+        
+    </script>
+
+    <script>
+          
+        let celisus = document.querySelector (".Celisus");
+
+        let myBtn =document.querySelector (".con");
+
+        let infaneter =document.querySelector (".convert-celisus");
+
+        let deg = document.querySelector (".deg");
+
+
+
+
+        function convertToCelisus (fahrenheit) {
+
+            return (5 / 9) * (fahrenheit - 32)
+            
+        }
+       
+       let addYear = document.querySelector (".year");
+
+       let addTime = document.querySelector (".time");
+
+       let newDate = new Date ();                                       //Date Javascript
+
+       addYear.textContent = "Today's Date"   + newDate.getFullYear()   
+       
+       addTime.textContent =  newDate.getUTCHours()
+
+    
+
+        infaneter.addEventListener("click", () => {
+
+
+
+            if ( myBtn.value == "") {
+
+            alert ("enter a value")
+        }
+
+            else {    
+                
+            celisus.textContent =  
+            Math.floor(convertToCelisus (myBtn.value));
+
+            deg.style.display = "inline-block";
+
+            myBtn.value ="";
+        }});
+
+
+
+    </script>
+</html>
